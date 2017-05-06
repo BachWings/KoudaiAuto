@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e005810-a5b3-4bb7-bef9-1b0d3518e559" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PocketWallet/PageObject/PocketWalletHomePage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PocketWallet/PageObject/WizardPage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PocketWallet/PageObject/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PocketWallet/TestData/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PocketWallet/TestSuite_PocketWallet/TestCase/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PocketWallet/TestSuite_PocketWallet/TestCase/test_PWHomePage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PocketWallet/TestSuite_PocketWallet/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PocketWallet/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/ForTest/run.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/ForTest/run_cases.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/ForTest/run_cases.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/PageObject/GesturePasswordPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/PageObject/InviteFriendsPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/PageObject/LoginPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/PageObject/PlatformAppHomePage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/PageObject/PlatformAppHomePopupPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/PageObject/SafeguardPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/PageObject/WebViewPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/PageObject/WizardPage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/TestData/Account.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/TestSuite_Safeguard/TestCase/test_Safeguard.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/TestSuite_Safeguard/run_cases.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/TestSuite_Safeguard/run_cases.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/KoudaiAuto.iml" afterPath="$PROJECT_DIR$/.idea/KoudaiAuto.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/BasePage.py" afterPath="$PROJECT_DIR$/Public/BasePage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Devices.py" afterPath="$PROJECT_DIR$/Public/Devices.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Drivers.py" afterPath="$PROJECT_DIR$/Public/Drivers.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/App/run_all_cases.bat" afterPath="$PROJECT_DIR$/PocketWallet/run_all_cases.bat" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/App/run_all_cases.py" afterPath="$PROJECT_DIR$/PocketWallet/run_all_cases.py" />
-    </list>
+    <list default="true" id="2e005810-a5b3-4bb7-bef9-1b0d3518e559" name="Default" comment="更新" />
     <ignored path="KoudaiAuto.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -139,7 +105,7 @@
       <file leaf-file-name="Devices.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Public/Devices.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.5506993">
+            <state vertical-scroll-proportion="-0.33096927">
               <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
               <folding />
             </state>
@@ -528,22 +494,30 @@
       <option name="number" value="Default" />
       <updated>1493884069008</updated>
     </task>
+    <task id="LOCAL-00001" summary="更新">
+      <created>1494077079853</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1494077079853</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.098569155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33073497" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33073497" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.098569155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="版本控制" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4960981" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -568,6 +542,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1004,7 +982,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/Devices.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5506993">
+        <state vertical-scroll-proportion="-0.33096927">
           <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
           <folding />
         </state>

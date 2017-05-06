@@ -1,0 +1,19 @@
+2017-05-06 00:02:54,344 - E4E4C15806007844 - INFO - platformName: Android
+2017-05-06 00:02:54,345 - E4E4C15806007844 - INFO - udid: E4E4C15806007844
+2017-05-06 00:02:54,345 - E4E4C15806007844 - INFO - package: cn.pocketwallet.pocketwallet
+
+2017-05-06 00:02:54,345 - E4E4C15806007844 - INFO - macaca server port: 3456
+
+2017-05-06 00:03:11,686 - E4E4C15806007844 - INFO - --> skip_wizard_to_home
+2017-05-06 00:03:11,686 - E4E4C15806007844 - INFO - 	--> WizardPage.evn_select
+2017-05-06 00:03:32,152 - E4E4C15806007844 - ERROR - WebDriverException, 
+Error: None
+Message: None
+
+2017-05-06 00:03:32,152 - E4E4C15806007844 - ERROR - 	<-- WizardPage.evn_select, WebDriverException, Error
+2017-05-06 00:03:38,079 - E4E4C15806007844 - ERROR - WebDriverException, 
+Error: None
+Message: IMAGE:WizardPage.evn_select-20170506000332.PNG
+
+2017-05-06 00:03:38,079 - E4E4C15806007844 - ERROR - <-- skip_wizard_to_home, WebDriverException, Error
+

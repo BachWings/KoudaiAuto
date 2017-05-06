@@ -1,0 +1,321 @@
+>> index.js:17:12 [master] pid:8996 webdriver server start with config:
+ { port: '3456',
+  verbose: true,
+  always: true,
+  ip: '192.168.0.4',
+  host: 'Bach',
+  loaded_time: '2017-05-06 10:38:41' }
+>> middlewares.js:17:10 [master] pid:8996 base middlewares attached
+>> router.js:127:10 [master] pid:8996 router set
+>> webdriver sdk launched
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:38:42]: method: GET url: /wd/hub/status, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:38:42]: {"sessionId":"","status":0,"value":"{\"build\":{},\"os\":{\"arch\":\"x64\",\"name\":\"win32\",\"version\":\"\"}}"}
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:38:42]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"Android","udid":"E4E4C15806007844","package":"cn.pocketwallet.pocketwallet","autoAcceptAlerts":"True"}}
+>> session.js:47:10 [master] pid:8996 Creating session, sessionId: 875f5fe5-9535-48e2-81ac-d3dba0619370.
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.android.uiautomator.client.Initialize:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testStartServer
+INSTRUMENTATION_STATUS: class=com.android.uiautomator.client.Initialize
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+
+>> socket server ready
+>> socket client ready
+recive: {"cmd":"alert","args":{"action":"registerAutoAcceptAlerts"}}
+
+return: {"success":true,"data":{"status":0,"value":true}}
+
+
+recive: {"cmd":"wake","args":{}}
+return: {"success":true,"data":{"status":0,"value":true}}
+
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:06]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"platformName\":\"Android\",\"udid\":\"E4E4C15806007844\",\"package\":\"cn.pocketwallet.pocketwallet\",\"autoAcceptAlerts\":\"True\"}"}
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:06]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/test_server_yun"}
+recive: {"cmd":"find","args":{"strategy":"id","selector":"cn.pocketwallet.pocketwallet:id/test_server_yun","multiple":false}}
+
+
+return: {"success":true,"data":{"status":7,"value":"An element could not be located on the page using the given search parameters."}}
+>> responseHandler.js:54:12 [master] pid:8996 Send Error Respone to Client: NoSuchElement: An element could not be located on the page using the given search parameters.
+>> responseHandler.js:60:14 [master] pid:8996 NoSuchElement: An element could not be located on the page using the given search parameters.
+    at Android.send (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-android\lib\macaca-android.js:368:11)
+    at next (native)
+    at onFulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-cli\node_modules\_co@4.6.0@co\index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+>> responseHandler.js:76:14 [master] pid:8996 Send Bad HTTP Respone to Client[2017-05-06 10:39:09]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":7,"value":{"message":"An element could not be located on the page using the given search parameters."}}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:09]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/window/current/size, jsonBody: {}
+recive: {"cmd":"getWindowSize","args":{}}
+
+
+return: {"success":true,"data":{"status":0,"value":"{\"width\":720,\"height\":1280}"}}
+
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:09]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"width\":720,\"height\":1280}"}
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:09]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/actions, jsonBody: {"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":320,"steps":10,"type":"drag"}]}
+recive: {"cmd":"actions","args":{"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":320,"steps":10,"type":"drag"}]}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:10]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:10]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/test_server_yun"}
+recive: {"cmd":"find","args":{"strategy":"id","selector":"cn.pocketwallet.pocketwallet:id/test_server_yun","multiple":false}}
+
+
+return: {"success":true,"data":{"status":0,"value":{"ELEMENT":"1"}}}
+
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:12]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"ELEMENT\":\"1\"}"}
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:12]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element/1/rect, jsonBody: {}
+recive: {"cmd":"getRect","args":{"elementId":"1"}}
+
+
+return: {"success":true,"data":{"status":0,"value":{"x":0,"y":194,"height":96,"width":720}}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:12]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"x\":0,\"y\":194,\"height\":96,\"width\":720}"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:12]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element/1/rect, jsonBody: {}
+recive: {"cmd":"getRect","args":{"elementId":"1"}}
+
+
+return: {"success":true,"data":{"status":0,"value":{"x":0,"y":194,"height":96,"width":720}}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:12]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"x\":0,\"y\":194,\"height\":96,\"width\":720}"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:12]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/window/current/size, jsonBody: {}
+recive: {"cmd":"getWindowSize","args":{}}
+
+
+return: {"success":true,"data":{"status":0,"value":"{\"width\":720,\"height\":1280}"}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:12]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"width\":720,\"height\":1280}"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:12]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/actions, jsonBody: {"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":320,"steps":10,"type":"drag"}]}
+recive: {"cmd":"actions","args":{"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":320,"steps":10,"type":"drag"}]}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:13]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:13]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/test_server_yun"}
+recive: {"cmd":"find","args":{"strategy":"id","selector":"cn.pocketwallet.pocketwallet:id/test_server_yun","multiple":false}}
+
+
+return: {"success":true,"data":{"status":0,"value":{"ELEMENT":"2"}}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:13]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"ELEMENT\":\"2\"}"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:13]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element/2/rect, jsonBody: {}
+recive: {"cmd":"getRect","args":{"elementId":"2"}}
+
+
+return: {"success":true,"data":{"status":0,"value":{"x":0,"y":128,"height":96,"width":720}}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:13]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"x\":0,\"y\":128,\"height\":96,\"width\":720}"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:13]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element/2/rect, jsonBody: {}
+recive: {"cmd":"getRect","args":{"elementId":"2"}}
+
+
+return: {"success":true,"data":{"status":0,"value":{"x":0,"y":128,"height":96,"width":720}}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:13]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"x\":0,\"y\":128,\"height\":96,\"width\":720}"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:13]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/test_server_yun"}
+recive: {"cmd":"find","args":{"strategy":"id","selector":"cn.pocketwallet.pocketwallet:id/test_server_yun","multiple":false}}
+
+
+return: {"success":true,"data":{"status":0,"value":{"ELEMENT":"3"}}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:13]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"ELEMENT\":\"3\"}"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:13]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element/3/click, jsonBody: {}
+recive: {"cmd":"click","args":{"elementId":"3"}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:16]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:16]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/btn_launch_activity"}
+recive: {"cmd":"find","args":{"strategy":"id","selector":"cn.pocketwallet.pocketwallet:id/btn_launch_activity","multiple":false}}
+
+
+return: {"success":true,"data":{"status":7,"value":"An element could not be located on the page using the given search parameters."}}
+>> responseHandler.js:54:12 [master] pid:8996 Send Error Respone to Client: NoSuchElement: An element could not be located on the page using the given search parameters.
+>> responseHandler.js:60:14 [master] pid:8996 NoSuchElement: An element could not be located on the page using the given search parameters.
+    at Android.send (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-android\lib\macaca-android.js:368:11)
+    at next (native)
+    at onFulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-cli\node_modules\_co@4.6.0@co\index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+>> responseHandler.js:76:14 [master] pid:8996 Send Bad HTTP Respone to Client[2017-05-06 10:39:17]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":7,"value":{"message":"An element could not be located on the page using the given search parameters."}}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:17]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/window/current/size, jsonBody: {}
+recive: {"cmd":"getWindowSize","args":{}}
+
+
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:17]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"width\":720,\"height\":1280}"}
+return: {"success":true,"data":{"status":0,"value":"{\"width\":720,\"height\":1280}"}}
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:17]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/actions, jsonBody: {"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}
+recive: {"cmd":"actions","args":{"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:18]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:18]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/btn_launch_activity"}
+recive: {"cmd":"find","args":{"strategy":"id","selector":"cn.pocketwallet.pocketwallet:id/btn_launch_activity","multiple":false}}
+
+
+return: {"success":true,"data":{"status":7,"value":"An element could not be located on the page using the given search parameters."}}
+
+>> responseHandler.js:54:12 [master] pid:8996 Send Error Respone to Client: NoSuchElement: An element could not be located on the page using the given search parameters.
+>> responseHandler.js:60:14 [master] pid:8996 NoSuchElement: An element could not be located on the page using the given search parameters.
+    at Android.send (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-android\lib\macaca-android.js:368:11)
+    at next (native)
+    at onFulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-cli\node_modules\_co@4.6.0@co\index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+>> responseHandler.js:76:14 [master] pid:8996 Send Bad HTTP Respone to Client[2017-05-06 10:39:18]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":7,"value":{"message":"An element could not be located on the page using the given search parameters."}}
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:18]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/window/current/size, jsonBody: {}
+recive: {"cmd":"getWindowSize","args":{}}
+
+
+return: {"success":true,"data":{"status":0,"value":"{\"width\":720,\"height\":1280}"}}
+
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:18]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"width\":720,\"height\":1280}"}
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:18]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/actions, jsonBody: {"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}
+recive: {"cmd":"actions","args":{"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:19]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:19]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/btn_launch_activity"}
+recive: {"cmd":"find","args":{"strategy":"id","selector":"cn.pocketwallet.pocketwallet:id/btn_launch_activity","multiple":false}}
+
+
+return: {"success":true,"data":{"status":7,"value":"An element could not be located on the page using the given search parameters."}}
+>> responseHandler.js:54:12 [master] pid:8996 Send Error Respone to Client: NoSuchElement: An element could not be located on the page using the given search parameters.
+>> responseHandler.js:60:14 [master] pid:8996 NoSuchElement: An element could not be located on the page using the given search parameters.
+    at Android.send (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-android\lib\macaca-android.js:368:11)
+    at next (native)
+    at onFulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-cli\node_modules\_co@4.6.0@co\index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+>> responseHandler.js:76:14 [master] pid:8996 Send Bad HTTP Respone to Client[2017-05-06 10:39:19]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":7,"value":{"message":"An element could not be located on the page using the given search parameters."}}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:19]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/window/current/size, jsonBody: {}
+recive: {"cmd":"getWindowSize","args":{}}
+
+
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:19]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"width\":720,\"height\":1280}"}
+return: {"success":true,"data":{"status":0,"value":"{\"width\":720,\"height\":1280}"}}
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:19]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/actions, jsonBody: {"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}
+recive: {"cmd":"actions","args":{"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:19]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:19]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/btn_launch_activity"}
+recive: {"cmd":"find","args":{"strategy":"id","selector":"cn.pocketwallet.pocketwallet:id/btn_launch_activity","multiple":false}}
+
+
+return: {"success":true,"data":{"status":7,"value":"An element could not be located on the page using the given search parameters."}}
+>> responseHandler.js:54:12 [master] pid:8996 Send Error Respone to Client: NoSuchElement: An element could not be located on the page using the given search parameters.
+>> responseHandler.js:60:14 [master] pid:8996 NoSuchElement: An element could not be located on the page using the given search parameters.
+    at Android.send (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-android\lib\macaca-android.js:368:11)
+    at next (native)
+    at onFulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-cli\node_modules\_co@4.6.0@co\index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+>> responseHandler.js:76:14 [master] pid:8996 Send Bad HTTP Respone to Client[2017-05-06 10:39:19]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":7,"value":{"message":"An element could not be located on the page using the given search parameters."}}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:19]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/window/current/size, jsonBody: {}
+recive: {"cmd":"getWindowSize","args":{}}
+
+
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:19]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"width\":720,\"height\":1280}"}
+return: {"success":true,"data":{"status":0,"value":"{\"width\":720,\"height\":1280}"}}
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:19]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/actions, jsonBody: {"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}
+recive: {"cmd":"actions","args":{"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:20]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:20]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/btn_launch_activity"}
+recive: {"cmd":"find","args":{"strategy":"id","selector":"cn.pocketwallet.pocketwallet:id/btn_launch_activity","multiple":false}}
+
+
+return: {"success":true,"data":{"status":7,"value":"An element could not be located on the page using the given search parameters."}}
+>> responseHandler.js:54:12 [master] pid:8996 Send Error Respone to Client: NoSuchElement: An element could not be located on the page using the given search parameters.
+>> responseHandler.js:60:14 [master] pid:8996 NoSuchElement: An element could not be located on the page using the given search parameters.
+    at Android.send (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-android\lib\macaca-android.js:368:11)
+    at next (native)
+    at onFulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-cli\node_modules\_co@4.6.0@co\index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+>> responseHandler.js:76:14 [master] pid:8996 Send Bad HTTP Respone to Client[2017-05-06 10:39:20]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":7,"value":{"message":"An element could not be located on the page using the given search parameters."}}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:20]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/window/current/size, jsonBody: {}
+recive: {"cmd":"getWindowSize","args":{}}
+
+
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:20]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"width\":720,\"height\":1280}"}
+return: {"success":true,"data":{"status":0,"value":"{\"width\":720,\"height\":1280}"}}
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:20]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/actions, jsonBody: {"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}
+recive: {"cmd":"actions","args":{"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:21]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:21]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/btn_launch_activity"}
+recive: {"cmd":"find","args":{"strategy":"id","selector":"cn.pocketwallet.pocketwallet:id/btn_launch_activity","multiple":false}}
+
+
+return: {"success":true,"data":{"status":7,"value":"An element could not be located on the page using the given search parameters."}}
+>> responseHandler.js:54:12 [master] pid:8996 Send Error Respone to Client: NoSuchElement: An element could not be located on the page using the given search parameters.
+>> responseHandler.js:60:14 [master] pid:8996 NoSuchElement: An element could not be located on the page using the given search parameters.
+    at Android.send (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-android\lib\macaca-android.js:368:11)
+    at next (native)
+    at onFulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-cli\node_modules\_co@4.6.0@co\index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+>> responseHandler.js:76:14 [master] pid:8996 Send Bad HTTP Respone to Client[2017-05-06 10:39:21]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":7,"value":{"message":"An element could not be located on the page using the given search parameters."}}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:21]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/window/current/size, jsonBody: {}
+recive: {"cmd":"getWindowSize","args":{}}
+
+
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:21]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"{\"width\":720,\"height\":1280}"}
+return: {"success":true,"data":{"status":0,"value":"{\"width\":720,\"height\":1280}"}}
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:21]: method: POST url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/actions, jsonBody: {"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}
+recive: {"cmd":"actions","args":{"actions":[{"fromX":360,"fromY":640,"toX":360,"toY":960,"steps":5,"type":"drag"}]}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:22]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:8996 Recieve HTTP Request from Client[2017-05-06 10:39:22]: method: GET url: /wd/hub/session/875f5fe5-9535-48e2-81ac-d3dba0619370/screenshot, jsonBody: {}
+recive: {"cmd":"getTmpDir","args":{}}
+
+return: {"success":true,"data":{"status":0,"value":"\/data\/local\/tmp\/local\/tmp"}}
+
+>> responseHandler.js:47:14 [master] pid:8996 Send HTTP Respone to Client[2017-05-06 10:39:22]: {"sessionId":"875f5fe5-9535-48e2-81ac-d3dba0619370","status":0,"value":"\"iVBORw0KGgoAAAANSUhEUgAAAtAAAAUACAYAAABuzmU9AAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3WdgFNe99/HfrHpDQgI1QHTTDQZTjOnNLdhxiSvELe2x4+SmOf0mNzfJTe51ctOd4uQmTtxtbAM2mGrAYIMxBtN7EV1CDRXUdp4XkhZJu9Lu2aJdyd/PG5C0O3PmzOzub8/854w1ae7NtgLh7dlWQEvv/Nz6J7DuDlTAaw9588PbP5HG/PAJbv/ZxouL7P0X7v70unTzDg+tAJsT/q0J7cdb+BcYmOA3p4M30Hh1XgLJxz2vhFzH9n+od6cjxMsHAAAAuhQCNAAAAGAg8ADd3hg5p0M8CG+nBLz2kDefg6Y5t97w2j3B7T/LeHGR..."}

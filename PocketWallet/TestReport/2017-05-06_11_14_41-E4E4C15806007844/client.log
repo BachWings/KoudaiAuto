@@ -1,0 +1,21 @@
+2017-05-06 11:14:45,307 - E4E4C15806007844 - INFO - platformName: Android
+2017-05-06 11:14:45,307 - E4E4C15806007844 - INFO - udid: E4E4C15806007844
+2017-05-06 11:14:45,307 - E4E4C15806007844 - INFO - package: cn.pocketwallet.pocketwallet
+
+2017-05-06 11:14:45,308 - E4E4C15806007844 - INFO - macaca server port: 3456
+
+2017-05-06 11:15:08,951 - E4E4C15806007844 - INFO - --> skip_wizard_to_home
+2017-05-06 11:15:08,951 - E4E4C15806007844 - INFO - 	--> WizardPage.enter_evn
+2017-05-06 11:15:09,339 - E4E4C15806007844 - INFO - 	--> WizardPage.wait_page
+2017-05-06 11:15:11,016 - E4E4C15806007844 - INFO - 	--> WizardPage.skip
+2017-05-06 11:15:16,413 - E4E4C15806007844 - ERROR - WebDriverException, 
+Error: WebDriverError.NO_SUCH_ELEMENT
+Message: An element could not be located on the page using the given search parameters.
+
+2017-05-06 11:15:16,413 - E4E4C15806007844 - ERROR - 	<-- WizardPage.skip, WebDriverException, Error
+2017-05-06 11:15:17,537 - E4E4C15806007844 - ERROR - WebDriverException, 
+Error: None
+Message: IMAGE:WizardPage.skip-20170506111516.PNG
+
+2017-05-06 11:15:17,537 - E4E4C15806007844 - ERROR - <-- skip_wizard_to_home, WebDriverException, Error
+

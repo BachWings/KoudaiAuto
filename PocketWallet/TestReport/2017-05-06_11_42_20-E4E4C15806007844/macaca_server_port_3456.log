@@ -1,0 +1,171 @@
+>> request.js:24:12 [master] pid:11356 get remote update info failed.
+>> index.js:17:12 [master] pid:1912 webdriver server start with config:
+ { port: '3456',
+  verbose: true,
+  always: true,
+  ip: '192.168.0.4',
+  host: 'Bach',
+  loaded_time: '2017-05-06 11:42:22' }
+>> middlewares.js:17:10 [master] pid:1912 base middlewares attached
+>> router.js:127:10 [master] pid:1912 router set
+>> webdriver sdk launched
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:23]: method: GET url: /wd/hub/status, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:24]: {"sessionId":"","status":0,"value":"{\"build\":{},\"os\":{\"arch\":\"x64\",\"name\":\"win32\",\"version\":\"\"}}"}
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:24]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"Android","udid":"E4E4C15806007844","package":"cn.pocketwallet.pocketwallet","autoAcceptAlerts":"True"}}
+>> session.js:47:10 [master] pid:1912 Creating session, sessionId: 50079b7d-45e6-4e16-85ef-efd10d4024ba.
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+com.android.uiautomator.client.Initialize:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testStartServer
+INSTRUMENTATION_STATUS: class=com.android.uiautomator.client.Initialize
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+uiautomator start socket server.
+
+>> socket server ready
+>> socket client ready
+recive: {"cmd":"alert","args":{"action":"registerAutoAcceptAlerts"}}
+
+return: {"success":true,"data":{"status":0,"value":true}}
+
+
+recive: {"cmd":"wake","args":{}}
+return: {"success":true,"data":{"status":0,"value":true}}
+
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:41]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"{\"platformName\":\"Android\",\"udid\":\"E4E4C15806007844\",\"package\":\"cn.pocketwallet.pocketwallet\",\"autoAcceptAlerts\":\"True\"}"}
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:41]: method: POST url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/btn_launch_activity"}
+recive: {"cmd":"find","args":{"strategy":"id","selector":"cn.pocketwallet.pocketwallet:id/btn_launch_activity","multiple":false}}
+
+
+return: {"success":true,"data":{"status":0,"value":{"ELEMENT":"1"}}}
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:41]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"{\"ELEMENT\":\"1\"}"}
+
+
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:41]: method: POST url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/element/1/click, jsonBody: {}
+recive: {"cmd":"click","args":{"elementId":"1"}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:42]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:42]: method: POST url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/element, jsonBody: {"using":"class name","value":"android.widget.ImageView"}
+recive: {"cmd":"find","args":{"strategy":"class name","selector":"android.widget.ImageView","multiple":false}}
+
+
+return: {"success":true,"data":{"status":7,"value":"An element could not be located on the page using the given search parameters."}}
+>> responseHandler.js:54:12 [master] pid:1912 Send Error Respone to Client: NoSuchElement: An element could not be located on the page using the given search parameters.
+>> responseHandler.js:60:14 [master] pid:1912 NoSuchElement: An element could not be located on the page using the given search parameters.
+    at Android.send (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-android\lib\macaca-android.js:368:11)
+    at next (native)
+    at onFulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-cli\node_modules\_co@4.6.0@co\index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+>> responseHandler.js:76:14 [master] pid:1912 Send Bad HTTP Respone to Client[2017-05-06 11:42:42]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":7,"value":{"message":"An element could not be located on the page using the given search parameters."}}
+
+
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:43]: method: POST url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/element, jsonBody: {"using":"class name","value":"android.widget.ImageView"}
+recive: {"cmd":"find","args":{"strategy":"class name","selector":"android.widget.ImageView","multiple":false}}
+
+return: {"success":true,"data":{"status":0,"value":{"ELEMENT":"2"}}}
+
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:43]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"{\"ELEMENT\":\"2\"}"}
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:43]: method: GET url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/element/2/displayed, jsonBody: {}
+recive: {"cmd":"isDisplayed","args":{"elementId":"2"}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:43]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:43]: method: GET url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/window/current/size, jsonBody: {}
+recive: {"cmd":"getWindowSize","args":{}}
+
+
+return: {"success":true,"data":{"status":0,"value":"{\"width\":720,\"height\":1280}"}}
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:43]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"{\"width\":720,\"height\":1280}"}
+
+
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:43]: method: POST url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/actions, jsonBody: {"actions":[{"fromX":360,"fromY":640,"toX":180,"toY":640,"steps":5,"type":"drag"}]}
+recive: {"cmd":"actions","args":{"actions":[{"fromX":360,"fromY":640,"toX":180,"toY":640,"steps":5,"type":"drag"}]}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:44]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:47]: method: GET url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/window/current/size, jsonBody: {}
+recive: {"cmd":"getWindowSize","args":{}}
+
+
+return: {"success":true,"data":{"status":0,"value":"{\"width\":720,\"height\":1280}"}}
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:47]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"{\"width\":720,\"height\":1280}"}
+
+
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:47]: method: POST url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/actions, jsonBody: {"actions":[{"fromX":360,"fromY":640,"toX":180,"toY":640,"steps":5,"type":"drag"}]}
+recive: {"cmd":"actions","args":{"actions":[{"fromX":360,"fromY":640,"toX":180,"toY":640,"steps":5,"type":"drag"}]}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:48]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:51]: method: GET url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/window/current/size, jsonBody: {}
+recive: {"cmd":"getWindowSize","args":{}}
+
+
+return: {"success":true,"data":{"status":0,"value":"{\"width\":720,\"height\":1280}"}}
+
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:51]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"{\"width\":720,\"height\":1280}"}
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:51]: method: POST url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/actions, jsonBody: {"actions":[{"fromX":360,"fromY":640,"toX":180,"toY":640,"steps":5,"type":"drag"}]}
+recive: {"cmd":"actions","args":{"actions":[{"fromX":360,"fromY":640,"toX":180,"toY":640,"steps":5,"type":"drag"}]}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:52]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"true"}
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:55]: method: POST url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/element, jsonBody: {"using":"xpath","value":"//android.widget.ImageView"}
+recive: {"cmd":"find","args":{"strategy":"xpath","selector":"//android.widget.ImageView","multiple":false}}
+
+return: {"success":true,"data":{"status":0,"value":{"ELEMENT":"3"}}}
+
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:55]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"{\"ELEMENT\":\"3\"}"}
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:55]: method: POST url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/element/3/click, jsonBody: {}
+recive: {"cmd":"click","args":{"elementId":"3"}}
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:56]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:56]: method: POST url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/element, jsonBody: {"using":"xpath","value":"//android.widget.TextView[@text='信用付']"}
+recive: {"cmd":"find","args":{"strategy":"xpath","selector":"//android.widget.TextView[@text='信用付']","multiple":false}}
+
+return: {"success":true,"data":{"status":0,"value":{"ELEMENT":"4"}}}
+
+
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:56]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"{\"ELEMENT\":\"4\"}"}
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:56]: method: GET url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/element/4/displayed, jsonBody: {}
+recive: {"cmd":"isDisplayed","args":{"elementId":"4"}}
+
+return: {"success":true,"data":{"status":0,"value":true}}
+
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:56]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"true"}
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:56]: method: POST url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/element, jsonBody: {"using":"xpath","value":"//android.widget.TextView[@text='信用付']"}
+recive: {"cmd":"find","args":{"strategy":"xpath","selector":"//android.widget.TextView[@text='信用付']","multiple":false}}
+
+
+return: {"success":true,"data":{"status":0,"value":{"ELEMENT":"5"}}}
+
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:56]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"{\"ELEMENT\":\"5\"}"}
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:56]: method: GET url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba/element/5/displayed, jsonBody: {}
+recive: {"cmd":"isDisplayed","args":{"elementId":"5"}}
+
+
+return: {"success":true,"data":{"status":0,"value":true}}
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:56]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0,"value":"true"}
+
+
+>> responseHandler.js:11:12 [master] pid:1912 Recieve HTTP Request from Client[2017-05-06 11:42:57]: method: DELETE url: /wd/hub/session/50079b7d-45e6-4e16-85ef-efd10d4024ba, jsonBody: {}
+>> session.js:80:12 [master] pid:1912 Delete session, sessionId: 50079b7d-45e6-4e16-85ef-efd10d4024ba
+>> responseHandler.js:47:14 [master] pid:1912 Send HTTP Respone to Client[2017-05-06 11:42:57]: {"sessionId":"50079b7d-45e6-4e16-85ef-efd10d4024ba","status":0}

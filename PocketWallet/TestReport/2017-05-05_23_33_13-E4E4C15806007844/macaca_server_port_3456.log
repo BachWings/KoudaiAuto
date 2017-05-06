@@ -1,0 +1,74 @@
+>> request.js:24:12 [master] pid:660 get remote update info failed.
+>> index.js:17:12 [master] pid:11044 webdriver server start with config:
+ { port: '3456',
+  verbose: true,
+  always: true,
+  ip: '192.168.0.4',
+  host: 'Bach',
+  loaded_time: '2017-05-05 23:33:15' }
+>> middlewares.js:17:10 [master] pid:11044 base middlewares attached
+>> router.js:127:10 [master] pid:11044 router set
+>> webdriver sdk launched
+>> responseHandler.js:11:12 [master] pid:11044 Recieve HTTP Request from Client[2017-05-05 23:33:15]: method: GET url: /wd/hub/status, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:11044 Send HTTP Respone to Client[2017-05-05 23:33:15]: {"sessionId":"","status":0,"value":"{\"build\":{},\"os\":{\"arch\":\"x64\",\"name\":\"win32\",\"version\":\"\"}}"}
+>> responseHandler.js:11:12 [master] pid:11044 Recieve HTTP Request from Client[2017-05-05 23:33:15]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"Android","udid":"E4E4C15806007844","package":"cn.pocketwallet.pocketwallet","autoAcceptAlerts":"True"}}
+>> session.js:47:10 [master] pid:11044 Creating session, sessionId: 495ae30e-66fb-4fb7-b78f-fdb18526b34e.
+INSTRUMENTATION_STATUS: numtests=1
+
+>> socket server ready
+>> socket client ready
+recive: {"cmd":"alert","args":{"action":"registerAutoAcceptAlerts"}}
+
+return: {"success":true,"data":{"status":0,"value":true}}
+
+
+recive: {"cmd":"wake","args":{}}
+return: {"success":true,"data":{"status":0,"value":true}}
+
+>> responseHandler.js:47:14 [master] pid:11044 Send HTTP Respone to Client[2017-05-05 23:33:38]: {"sessionId":"495ae30e-66fb-4fb7-b78f-fdb18526b34e","status":0,"value":"{\"platformName\":\"Android\",\"udid\":\"E4E4C15806007844\",\"package\":\"cn.pocketwallet.pocketwallet\",\"autoAcceptAlerts\":\"True\"}"}
+>> responseHandler.js:11:12 [master] pid:11044 Recieve HTTP Request from Client[2017-05-05 23:33:38]: method: POST url: /wd/hub/session/495ae30e-66fb-4fb7-b78f-fdb18526b34e/element, jsonBody: {"using":"class name","value":"android.widget.ImageView"}
+recive: {"cmd":"find","args":{"strategy":"class name","selector":"android.widget.ImageView","multiple":false}}
+
+return: {"success":true,"data":{"status":7,"value":"An element could not be located on the page using the given search parameters."}}
+
+>> responseHandler.js:54:12 [master] pid:11044 Send Error Respone to Client: NoSuchElement: An element could not be located on the page using the given search parameters.
+>> responseHandler.js:60:14 [master] pid:11044 NoSuchElement: An element could not be located on the page using the given search parameters.
+    at Android.send (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-android\lib\macaca-android.js:368:11)
+    at next (native)
+    at onFulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-cli\node_modules\_co@4.6.0@co\index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+>> responseHandler.js:76:14 [master] pid:11044 Send Bad HTTP Respone to Client[2017-05-05 23:33:41]: {"sessionId":"495ae30e-66fb-4fb7-b78f-fdb18526b34e","status":7,"value":{"message":"An element could not be located on the page using the given search parameters."}}
+>> responseHandler.js:11:12 [master] pid:11044 Recieve HTTP Request from Client[2017-05-05 23:33:42]: method: POST url: /wd/hub/session/495ae30e-66fb-4fb7-b78f-fdb18526b34e/element, jsonBody: {"using":"class name","value":"android.widget.ImageView"}
+recive: {"cmd":"find","args":{"strategy":"class name","selector":"android.widget.ImageView","multiple":false}}
+
+
+return: {"success":true,"data":{"status":7,"value":"An element could not be located on the page using the given search parameters."}}
+>> responseHandler.js:54:12 [master] pid:11044 Send Error Respone to Client: NoSuchElement: An element could not be located on the page using the given search parameters.
+>> responseHandler.js:60:14 [master] pid:11044 NoSuchElement: An element could not be located on the page using the given search parameters.
+    at Android.send (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-android\lib\macaca-android.js:368:11)
+    at next (native)
+    at onFulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-cli\node_modules\_co@4.6.0@co\index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+>> responseHandler.js:76:14 [master] pid:11044 Send Bad HTTP Respone to Client[2017-05-05 23:33:46]: {"sessionId":"495ae30e-66fb-4fb7-b78f-fdb18526b34e","status":7,"value":{"message":"An element could not be located on the page using the given search parameters."}}
+
+
+>> responseHandler.js:11:12 [master] pid:11044 Recieve HTTP Request from Client[2017-05-05 23:33:47]: method: POST url: /wd/hub/session/495ae30e-66fb-4fb7-b78f-fdb18526b34e/element, jsonBody: {"using":"class name","value":"android.widget.ImageView"}
+recive: {"cmd":"find","args":{"strategy":"class name","selector":"android.widget.ImageView","multiple":false}}
+
+
+return: {"success":true,"data":{"status":7,"value":"An element could not be located on the page using the given search parameters."}}
+>> responseHandler.js:54:12 [master] pid:11044 Send Error Respone to Client: NoSuchElement: An element could not be located on the page using the given search parameters.
+>> responseHandler.js:60:14 [master] pid:11044 NoSuchElement: An element could not be located on the page using the given search parameters.
+    at Android.send (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-android\lib\macaca-android.js:368:11)
+    at next (native)
+    at onFulfilled (C:\Users\Administrator\AppData\Roaming\npm\node_modules\macaca-cli\node_modules\_co@4.6.0@co\index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+>> responseHandler.js:76:14 [master] pid:11044 Send Bad HTTP Respone to Client[2017-05-05 23:33:50]: {"sessionId":"495ae30e-66fb-4fb7-b78f-fdb18526b34e","status":7,"value":{"message":"An element could not be located on the page using the given search parameters."}}
+
+
+>> responseHandler.js:11:12 [master] pid:11044 Recieve HTTP Request from Client[2017-05-05 23:33:50]: method: GET url: /wd/hub/session/495ae30e-66fb-4fb7-b78f-fdb18526b34e/screenshot, jsonBody: {}
+recive: {"cmd":"getTmpDir","args":{}}
+
+return: {"success":true,"data":{"status":0,"value":"\/data\/local\/tmp\/local\/tmp"}}
+
+>> responseHandler.js:47:14 [master] pid:11044 Send HTTP Respone to Client[2017-05-05 23:33:51]: {"sessionId":"495ae30e-66fb-4fb7-b78f-fdb18526b34e","status":0,"value":"\"iVBORw0KGgoAAAANSUhEUgAAAtAAAAUACAYAAABuzmU9AAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3XecVPW9//H395wzs70ILCyw9CJIEVAsqLmxY40FTWwpanJTTDH53ZvkthS7iWmm13ujaZoYvSVRoyA2FEWQIgjSlpVelu2zM+d8f3+cmcMuWw9F2Ph65kGYnVPm+z27Lu/5zud8v8ZaawUAAACgV5wj3QAAAACgLyFAAwAAADEQoAEAAIAYCNAAAABADARoAAAAIAYCNAAAABADARoAAACIgQANAAAAxECABgAAAGIgQAMAAAAxEKABAACAGAjQAAAAQAwEaAAAACAGAjQAAAAQAwEaAAAAiIEADQAAAMRAgAYAAABiIEADAAAA..."}
