@@ -13,7 +13,7 @@ from Public.BasePage import BasePage
 from Public.Log import Log
 from Public.LoginStatus import LoginStatus
 
-from App.PageObject.WizardPage import skip_wizard_to_home
+from PocketWallet.PageObject.WizardPage import skip_wizard_to_home
 
 
 class Drivers:

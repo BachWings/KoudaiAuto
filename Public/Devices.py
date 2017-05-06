@@ -18,7 +18,8 @@ class Devices:
             if s_value.rfind('device') != -1 and (not s_value.startswith("List")) and s_value != "":
                 android['platformName'] = 'Android'
                 android['udid'] = s_value[:s_value.find('device')].strip()
-                android['package'] = 'com.platform.jhj'
+                # android['package'] = 'com.platform.jhj'
+                android['package'] = 'cn.pocketwallet.pocketwallet'
                 android['autoAcceptAlerts'] = 'True'
                 # android['activity'] = 'xxxxxx'
 

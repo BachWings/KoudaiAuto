@@ -25,7 +25,7 @@ class BasePage(object):
 
     @staticmethod
     def _get_element_size(element):
-        rect = element.rect
+        rect = element.ret
 
         x_center = rect['x'] + rect['width'] / 2
         y_center = rect['y'] + rect['height'] / 2
