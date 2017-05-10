@@ -596,7 +596,13 @@
       <option name="project" value="LOCAL" />
       <updated>1494407397564</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="更新handle_alert方法，删除多余文件">
+      <created>1494407406637</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1494407406637</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
