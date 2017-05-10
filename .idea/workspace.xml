@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e005810-a5b3-4bb7-bef9-1b0d3518e559" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-05_23_33_13-E4E4C15806007844/WizardPage.wait_page-20170505233350.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-05_23_33_13-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-05_23_33_13-E4E4C15806007844/macaca_server_port_3456.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_02_51-E4E4C15806007844/WizardPage.evn_select-20170506000332.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_02_51-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_02_51-E4E4C15806007844/macaca_server_port_3456.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_29_03-E4E4C15806007844/WizardPage.evn_select-20170506002949.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_29_03-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_29_03-E4E4C15806007844/macaca_server_port_3456.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_31_24-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_31_24-E4E4C15806007844/macaca_server_port_3457.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_31_24-E4E4C15806007844/skip_wizard_to_home-20170506003204.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_40_41-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_40_41-E4E4C15806007844/macaca_server_port_3456.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_40_41-E4E4C15806007844/skip_wizard_to_home-20170506004127.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_42_49-E4E4C15806007844/WizardPage.enter_evn-20170506004328.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_42_49-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_42_49-E4E4C15806007844/macaca_server_port_3457.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_45_02-E4E4C15806007844/WizardPage.enter_evn-20170506004537.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_45_02-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_45_02-E4E4C15806007844/macaca_server_port_3456.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_46_16-E4E4C15806007844/WizardPage.enter_evn-20170506004652.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_46_16-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_00_46_16-E4E4C15806007844/macaca_server_port_3457.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_10_38_39-E4E4C15806007844/WizardPage.enter_evn-20170506103922.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_10_38_39-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_10_38_39-E4E4C15806007844/macaca_server_port_3456.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_10_41_02-E4E4C15806007844/WizardPage.enter_evn-20170506104140.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_10_41_02-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_10_41_02-E4E4C15806007844/macaca_server_port_3457.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_14_41-E4E4C15806007844/WizardPage.skip-20170506111516.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_14_41-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_14_41-E4E4C15806007844/macaca_server_port_3456.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_35_13-E4E4C15806007844/TestReport.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_35_13-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_35_13-E4E4C15806007844/macaca_server_port_3456.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_38_59-E4E4C15806007844/Safeguard.setUp-20170506113935.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_38_59-E4E4C15806007844/TestReport.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_38_59-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_38_59-E4E4C15806007844/macaca_server_port_3456.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_42_20-E4E4C15806007844/TestReport.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_42_20-E4E4C15806007844/client.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PocketWallet/TestReport/2017-05-06_11_42_20-E4E4C15806007844/macaca_server_port_3456.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PocketWallet/TestSuite_PocketWallet/TestCase/test_PWHomePage.py" afterPath="$PROJECT_DIR$/PocketWallet/TestSuite_PocketWallet/TestCase/test_PWHomePage.py" />
     </list>
     <ignored path="KoudaiAuto.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -634,7 +590,13 @@
       <option name="project" value="LOCAL" />
       <updated>1494406267730</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更新handle_alert方法，删除多余文件">
+      <created>1494407397564</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1494407397564</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -646,9 +608,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5021322" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33549783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33549783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15351813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15351813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -681,7 +643,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新" />
     <MESSAGE value="更新handle_alert方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新handle_alert方法" />
+    <MESSAGE value="更新handle_alert方法，删除多余文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新handle_alert方法，删除多余文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
