@@ -20,7 +20,7 @@ class Devices:
                 android['udid'] = s_value[:s_value.find('device')].strip()
                 # android['package'] = 'com.platform.jhj'
                 android['package'] = 'cn.pocketwallet.pocketwallet'
-                android['autoAcceptAlerts'] = 'True'
+                android['autoAcceptAlerts'] = True
                 # android['activity'] = 'xxxxxx'
 
                 devices.append(android)

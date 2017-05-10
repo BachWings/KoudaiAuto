@@ -25,7 +25,7 @@ class Drivers:
         log.i('platformName: %s', run.get_device()['platformName'])
         log.i('udid: %s', run.get_device()['udid'])
         log.i('package: %s\n', run.get_device()['package'])
-
+        log.i('autoAcceptAlerts: %s\n', run.get_device()['autoAcceptAlerts'])
         log.i('macaca server port: %d\n', run.get_port())
 
         # init driver

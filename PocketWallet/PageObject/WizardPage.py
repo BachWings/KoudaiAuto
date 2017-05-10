@@ -19,11 +19,11 @@ class WizardPage(BasePage):
         self.driver \
             .element_by_id('cn.pocketwallet.pocketwallet:id/test_server_yun').click()"""
 
-    @teststep
+    '''@teststep
     def enter_evn(self):
         # self.find_element_on_vertical('id', 'cn.pocketwallet.pocketwallet:id/btn_launch_activity', steps=5)
         self.driver \
-            .element_by_id('cn.pocketwallet.pocketwallet:id/btn_launch_activity').click()
+            .element_by_id('cn.pocketwallet.pocketwallet:id/btn_launch_activity').click()'''
 
     @teststep
     def wait_page(self):
@@ -48,9 +48,15 @@ def skip_wizard_to_home():
     """在App启动页面，跳过Wizard进入到App首页"""
     wizard = WizardPage()
     # wizard.evn_select()
-    wizard.enter_evn()
+    # wizard.enter_evn()
     wizard.wait_page()
     wizard.skip()
 
     home_page = PocketWalletHomePage()
+    home_page.handle_alert()
     assert home_page.wait_page()
+
+
+
+
+
