@@ -40,5 +40,5 @@ class PWHomePage(unittest.TestCase):
     @testcase
     def test_PW_HomePage_001(self):
         """首页"""
-        self.assertFalse(self.home_page.wait_page())
+        self.assertTrue(self.home_page.wait_page())
 
