@@ -35,3 +35,40 @@ class PocketWalletHomePage(BasePage):
             return True
         except WebDriverException:
             return False
+
+    @teststep
+    def click_usr_account(self):
+        """以“注册、认证钱包”的id为标志"""
+        self.driver \
+            .element_by_id("cn.pocketwallet.pocketwallet:id/tv_user_account").click()
+
+    @teststep
+    def click_msg_center(self):
+        """以消息中心的id为标志"""
+        self.driver \
+            .element_by_id("cn.pocketwallet.pocketwallet:id/account_iv_message").click()
+
+    @teststep
+    def click_xyf(self):
+        """以信用付的id为标志"""
+        self.driver \
+            .element_by_id("cn.pocketwallet.pocketwallet:id/credit_pay_wrapper").click()
+
+    @teststep
+    def click_tx(self):
+        """以提现的id为标志"""
+        self.driver \
+            .element_by_id("cn.pocketwallet.pocketwallet:id/withdraw_wrapper").click()
+
+    @teststep
+    def click_te(self):
+        """以提额的id为标志"""
+        self.driver \
+            .element_by_id("cn.pocketwallet.pocketwallet:id/withdraw_wrapper").click()
+
+    @teststep
+    def click_hk(self):
+        """以还款的id为标志"""
+        self.driver \
+            .element_by_id("cn.pocketwallet.pocketwallet:id/repayment_wrapper").click()
+
