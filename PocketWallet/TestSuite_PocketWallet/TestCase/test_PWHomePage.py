@@ -11,6 +11,7 @@ from Public.Decorator import teardown
 from Public.Decorator import testcase
 
 from PocketWallet.PageObject.PocketWalletHomePage import PocketWalletHomePage
+from PocketWallet.PageObject.LoginPage import LoginPage
 # from App.PageObject.PlatformAppHomePage import back_to_app
 # from PocketWallet.PageObject.WizardPage import WizardPage
 
@@ -38,7 +39,9 @@ class PWHomePage(unittest.TestCase):
         pass
 
     @testcase
-    def test_PW_HomePage_001(self):
+    def test_PW_HomePage_Login(self):
         """首页"""
-        self.assertTrue(self.home_page.wait_page())
+        self.home_page.click_usr_account()
 
+        login_page = LoginPage()
+        self.assertTrue(login_page.new_valid_login())

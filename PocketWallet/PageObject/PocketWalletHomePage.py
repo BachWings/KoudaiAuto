@@ -6,7 +6,7 @@ from macaca import WebDriverException
 from Public.BasePage import BasePage
 from Public.Decorator import teststep
 
-# from Public.Decorator import teststeps
+from Public.Decorator import teststeps
 
 '''from App.PageObject.WebViewPage import WebViewPage
 from App.PageObject.InviteFriendsPage import InviteFriendsPage
