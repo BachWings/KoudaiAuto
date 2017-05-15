@@ -17,6 +17,7 @@ from PocketWallet.PageObject.WizardPage import skip_wizard_to_home
 
 
 class Drivers:
+    """macaca server的开启、以及driver的初始化。macaca client的log配置、测试报告路径的配置、BasePage中的driver配置"""
     @staticmethod
     def _run_cases(server_url, run, cases):
         log = Log()

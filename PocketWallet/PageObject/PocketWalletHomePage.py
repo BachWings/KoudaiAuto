@@ -5,13 +5,7 @@ import time
 from macaca import WebDriverException
 from Public.BasePage import BasePage
 from Public.Decorator import teststep
-
 from Public.Decorator import teststeps
-
-'''from App.PageObject.WebViewPage import WebViewPage
-from App.PageObject.InviteFriendsPage import InviteFriendsPage
-from App.PageObject.LoginPage import LoginPage
-# from App.PageObject.MsgCenterPage import MsgCenterPage'''
 
 
 class PocketWalletHomePage(BasePage):
@@ -35,6 +29,12 @@ class PocketWalletHomePage(BasePage):
             return True
         except WebDriverException:
             return False
+
+    @teststep
+    def login_status(self):
+        """获取登录状态"""
+        self.driver.element_by_id('cn.pocketwallet.pocketwallet:id/tv_current_available_money').text
+        # print(self.driver.element_by_id('cn.pocketwallet.pocketwallet:id/tv_current_available_money').text)
 
     @teststep
     def click_usr_account(self):
@@ -71,4 +71,13 @@ class PocketWalletHomePage(BasePage):
         """以还款的id为标志"""
         self.driver \
             .element_by_id("cn.pocketwallet.pocketwallet:id/repayment_wrapper").click()
+
+    @teststeps
+    def is_login(self):
+        """判断是否登录"""
+        loginstatus = self.login_status()
+        if loginstatus == '尚未登录':
+            return False
+        else:
+            return True
 

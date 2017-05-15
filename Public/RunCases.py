@@ -5,6 +5,7 @@ from Public.HTMLTestRunner import HTMLTestRunner
 
 
 class RunCases:
+    """设置了每个设备UI自动化时设备信息、macaca server端口、存放测试报告/日志/截图的路径"""
     def __init__(self, device, port):
         self.test_report_root = '.\\TestReport'
         self.device = device
@@ -14,7 +15,7 @@ class RunCases:
             os.mkdir(self.test_report_root)
 
         date_time = time.strftime('%Y-%m-%d_%H_%M_%S', time.localtime(time.time()))
-        self.test_report_path = self.test_report_root + '\\' + date_time + '-%s' % self.device['udid']
+        self.test_report_path = self.test_report_root + '\\' + date_time # + '-%s' % self.device['udid']
         if not os.path.exists(self.test_report_path):
             os.mkdir(self.test_report_path)
 

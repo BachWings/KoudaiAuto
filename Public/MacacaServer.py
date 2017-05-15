@@ -36,7 +36,7 @@ class MacacaServer:
 
         for run in self._runs:
             while not self.is_running(run.get_port()):
-                print('wait macaca server all ready...')
+                print('wait for macaca server to be ready...')
                 time.sleep(1)
         print('macaca server all ready')
 

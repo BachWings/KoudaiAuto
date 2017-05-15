@@ -13,6 +13,7 @@ flag = 'IMAGE:'
 log = Log()
 
 
+
 def _screenshot(name):
     date_time = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
     screenshot = name + '-' + date_time + '.PNG'
@@ -25,6 +26,7 @@ def _screenshot(name):
 
 
 def teststep(func):
+    """每个测试步骤都带有这样的@teststep装饰器，以便在console以及client.log中显示与记录以及错误后的截图等操作"""
     @wraps(func)
     def wrapper(*args, **kwargs):
         try:
