@@ -2,10 +2,12 @@ __author__ = 'Bach'
 
 import time
 
+
 from macaca import WebDriverException
 from Public.BasePage import BasePage
 from Public.Decorator import teststep
 from Public.Decorator import teststeps
+from Public.ConfigParser import getConfig
 
 
 class PocketWalletHomePage(BasePage):
@@ -22,10 +24,10 @@ class PocketWalletHomePage(BasePage):
     @teststep
     def wait_page(self, timeout=10000):
         """以“信用付”的xpath为标志"""
-
+        print(getConfig('HomePage', 'xyf_id'))
         try:
             self.driver \
-                .wait_for_element_by_xpath("//android.widget.TextView[@text='信用付']", timeout=timeout)
+                .wait_for_element_by_id(getConfig('HomePage', 'xyf_id'), timeout=timeout)
             return True
         except WebDriverException:
             return False

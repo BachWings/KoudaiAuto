@@ -41,7 +41,7 @@ class PWHomePage(unittest.TestCase):
     @testcase
     def test_HomePage_001_Open(self):
         """确认打开首页"""
-        self.assertFalse(self.home_page.wait_page())
+        self.assertTrue(self.home_page.wait_page())
 
     @testcase
     def test_HomePage_002_Login(self):
