@@ -44,9 +44,9 @@ class PWHomePage(unittest.TestCase):
         self.assertTrue(self.home_page.wait_page())
 
     @testcase
-    def test_HomePage_002_Login(self):
+    def test_HomePage_002_Login_Pwd(self):
         """首页登录功能检查"""
         self.home_page.click_usr_account()
         login_page = LoginPage()
-        login_page.new_valid_login()
+        login_page.new_valid_login_pwd()
         self.assertTrue(self.home_page.is_login())

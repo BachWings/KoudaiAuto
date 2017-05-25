@@ -18,10 +18,22 @@ class LoginPage(BasePage):
         """以登录页面的“登录”Button的ID为依据"""
         try:
             self.driver\
-                .wait_for_element_by_id(getConfig('LoginPage', 'enter_pwd'), timeout=timeout)
+                .wait_for_element_by_id(getConfig('LoginPage', 'enter_pwd'), timeout=timeout).text == "登录"
             return True
         except WebDriverException:
             return False
+
+    @teststep
+    def wait_page_verification(self, timeout=10000):
+        """以登录页面的“登录”Button的ID为依据"""
+        try:
+            self.driver\
+                .wait_for_element_by_id(getConfig('LoginPage', 'enter_pwd'), timeout=timeout).text == "登录/注册"
+            return True
+        except WebDriverException:
+            return False
+
+    @teststep
 
     @teststep
     def close(self):
@@ -44,6 +56,14 @@ class LoginPage(BasePage):
             .send_keys(pwd)
 
     @teststep
+    def input_verification(self, ver):
+        """输入验证码"""
+        self.driver\
+            .element_by_id(getConfig('LoginPage', 'enter_pwd'))\
+            .clear()\
+            .send_keys(ver)
+
+    @teststep
     def login(self):
         """以“登录”Button的id为依据"""
         self.driver\
@@ -55,7 +75,7 @@ class LoginPage(BasePage):
         """检查登录页"""
         try:
             self.driver \
-                .wait_for_element_by_id(getConfig('LoginPage', 'xyf_id'), timeout=timeout)
+                .element_by_id(getConfig('LoginPage', 'login_btn').text, timeout=timeout)
             return True
         except WebDriverException:
             return False
@@ -73,13 +93,25 @@ class LoginPage(BasePage):
         self.driver.context = contexts[0]'''
 
     @teststeps
-    def new_valid_login(self):
+    def new_valid_login_pwd(self):
         """用给定的account与password进行登录"""
         login = LoginPage()
+        login.wait_page_pwd()
         login.input_account(VALID_ACCOUNT.account())
         login.input_password(VALID_ACCOUNT.password())
         login.login()
         time.sleep(1)
+
+    @teststeps
+    def new_valid_login_verification(self):
+        """用验证码登录"""
+        login = LoginPage()
+        login.wait_page_verification()
+        login.input_account(VALID_ACCOUNT.account())
+        login.input_verification(VALID_ACCOUNT.verification())
+        login.login()
+        time.sleep(1)
+
 
 
 
