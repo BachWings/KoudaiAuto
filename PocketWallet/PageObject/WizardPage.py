@@ -37,7 +37,7 @@ def skip_wizard_to_home():
     wizard.skip()
 
     home_page = PocketWalletHomePage()
-    home_page.handle_alert()
+    # home_page.handle_alert()
     assert home_page.wait_page()
 
 
