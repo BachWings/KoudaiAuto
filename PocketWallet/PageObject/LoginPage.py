@@ -34,10 +34,18 @@ class LoginPage(BasePage):
             return False
 
     @teststep
+    def verification(self):
+        """点击验证码登录tab"""
+        self.driver\
+            .element_by_id(getConfig('LoginPage', 'verification_login_tab'))\
+            .click()
+
 
     @teststep
     def close(self):
-        self.driver.element_by_id(getConfig('LoginPage', 'close')).click()
+        self.driver\
+            .element_by_id(getConfig('LoginPage', 'close'))\
+            .click()
 
     @teststep
     def input_account(self, account):
@@ -70,16 +78,6 @@ class LoginPage(BasePage):
             .element_by_id(getConfig('LoginPage', 'login_btn'))\
             .click()
 
-    @teststep
-    def check_login_password(self):
-        """检查登录页"""
-        try:
-            self.driver \
-                .element_by_id(getConfig('LoginPage', 'login_btn').text, timeout=timeout)
-            return True
-        except WebDriverException:
-            return False
-
     '''@teststep
     def switch_webview(self):
         """切换到webview，操作H5"""
@@ -106,6 +104,7 @@ class LoginPage(BasePage):
     def new_valid_login_verification(self):
         """用验证码登录"""
         login = LoginPage()
+        login.verification()
         login.wait_page_verification()
         login.input_account(VALID_ACCOUNT.account())
         login.input_verification(VALID_ACCOUNT.verification())
