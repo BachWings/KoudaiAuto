@@ -18,7 +18,8 @@ class LoginPage(BasePage):
         """以登录页面的“登录”Button的ID为依据"""
         try:
             self.driver\
-                .wait_for_element_by_id(getConfig('LoginPage', 'enter_pwd'), timeout=timeout).text == "登录"
+                .wait_for_element_by_id(getConfig('LoginPage', 'enter_pwd'), timeout=timeout) \
+                and self.driver.element_by_id(getConfig('LoginPage', 'enter_pwd')).text == "登录"
             return True
         except WebDriverException:
             return False
@@ -28,7 +29,8 @@ class LoginPage(BasePage):
         """以登录页面的“登录”Button的ID为依据"""
         try:
             self.driver\
-                .wait_for_element_by_id(getConfig('LoginPage', 'enter_pwd'), timeout=timeout).text == "登录/注册"
+                .wait_for_element_by_id(getConfig('LoginPage', 'enter_pwd'), timeout=timeout) \
+                and self.driver.element_by_id(getConfig('LoginPage', 'enter_pwd')).text == "登录\注册"
             return True
         except WebDriverException:
             return False
