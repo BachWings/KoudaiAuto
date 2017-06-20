@@ -130,7 +130,7 @@ class BasePage(object):
             toX = 0.75*x
             toY = 0.5*y
 
-        self._swipe(fromX, fromY, toX, toY, steps)
+        self.dri.swipe(fromX, fromY, toX, toY, steps)
 
     def _find_element_by_swipe(self, direction, using, value, element=None, steps=10, max_swipe=6):
         times = max_swipe

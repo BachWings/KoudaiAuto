@@ -12,6 +12,7 @@ from Public.Decorator import testcase
 
 from PocketWallet.PageObject.PocketWalletHomePage import PocketWalletHomePage
 from PocketWallet.PageObject.LoginPage import LoginPage
+from PocketWallet.PageObject.WithdrawConfirmPage import WithdrawConfirmPage
 
 
 # from App.PageObject.PlatformAppHomePage import back_to_app
@@ -23,6 +24,7 @@ class PWHomePage(unittest.TestCase):
     @setupclass
     def setUpClass(cls):
         cls.home_page = PocketWalletHomePage()
+
 
     @classmethod
     @teardownclass
@@ -50,3 +52,12 @@ class PWHomePage(unittest.TestCase):
         login_page = LoginPage()
         login_page.new_valid_login_pwd()
         self.assertTrue(self.home_page.is_login())
+
+    @testcase
+    def test_HomePage_003_Withdraw(self):
+        """首页提现功能检查"""
+        self.home_page.click_tx()
+        confirm_page = WithdrawConfirmPage()
+        confirm_page.withdraw()
+        self.assertTrue(confirm_page.is_withdraw())
+
