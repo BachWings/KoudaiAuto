@@ -26,6 +26,8 @@ class WithdrawConfirmPage(BasePage):
     def switch_webview(self):
         """切换到webview，操作H5"""
         contexts = self.driver.contexts
+        for i in contexts:
+            print(i)
         self.driver.context = contexts[-1]
 
     @teststep
@@ -71,11 +73,12 @@ class WithdrawConfirmPage(BasePage):
             .click()
 
     @teststep
-    def is_withdraw(self):
+    def is_withdraw(self, timeout=10000):
         """检测借款是否成功"""
+        print()
         try:
             self.driver \
-                .element_by_xpath(getConfig('WithdrawConfirmPage', 'success')).text() == '提现成功'
+                .wait_for_element_by_xpath(getConfig('WithdrawConfirmPage', 'complete'), timeout=timeout)
             return True
         except WebDriverException:
             return False

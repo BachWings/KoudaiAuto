@@ -6,6 +6,6 @@ import configparser
 
 def getConfig(section, key):
     config = configparser.ConfigParser()
-    config.read("..\\PocketWallet\\PageObject\\PwProperties.ini",encoding="utf-8")
+    config.read("E:\\Github\\KoudaiAuto\\PocketWallet\\PageObject\\PwProperties.ini", encoding="utf-8")
     return config.get(section, key)
 

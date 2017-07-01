@@ -36,11 +36,13 @@ class BasePage(object):
 
         return x_left, y_up, x_center, y_center, x_right, y_down
 
-    def _swipe(self, fromX, fromY, toX, toY, steps):
+    def _swipe(self, fromX, fromY, toX, toY, duration):
         self.driver \
-            .touch('drag', {'fromX': fromX, 'fromY': fromY, 'toX': toX, 'toY': toY, 'steps': steps})
+            .touch('drag', {'fromX': fromX, 'fromY': fromY, 'toX': toX, 'toY': toY, 'duration': duration})
+        #    .swipe(fromX, fromY, toX, toY, duration)
 
-    def swipe_up(self, element=None, steps=10):
+
+    def swipe_up(self, element=None, duration=1):
         """
         swipe up
         :param element: WebElement of Macaca, if None while swipe window of phone
@@ -61,9 +63,9 @@ class BasePage(object):
             toX = 0.5*x
             toY = 0.25*y
 
-        self._swipe(fromX, fromY, toX, toY, steps)
+        self._swipe(fromX, fromY, toX, toY, duration)
 
-    def swipe_down(self, element=None, steps=10):
+    def swipe_down(self, element=None, duration=1):
         """
         swipe down
         :param element: WebElement of Macaca, if None while swipe window of phone
@@ -84,9 +86,9 @@ class BasePage(object):
             toX = 0.5*x
             toY = 0.75*y
 
-        self._swipe(fromX, fromY, toX, toY, steps)
+        self._swipe(fromX, fromY, toX, toY, duration)
 
-    def swipe_left(self, element=None, steps=10):
+    def swipe_left(self, element=None, duration=1):
         """
         swipe left
         :param element: WebElement of Macaca, if None while swipe window of phone
@@ -102,14 +104,14 @@ class BasePage(object):
             toY = y_center
         else:
             x, y = self._get_window_size()
-            fromX = 0.5*x
+            fromX = 0.9*x
             fromY = 0.5*y
-            toX = 0.25*x
+            toX = 0.2*x
             toY = 0.5*y
 
-        self._swipe(fromX, fromY, toX, toY, steps)
+        self._swipe(fromX, fromY, toX, toY, duration)
 
-    def swipe_right(self, element=None, steps=10):
+    def swipe_right(self, element=None, duration=1):
         """
         swipe right
         :param element: WebElement of Macaca, if None while swipe window of phone
@@ -130,9 +132,9 @@ class BasePage(object):
             toX = 0.75*x
             toY = 0.5*y
 
-        self.dri.swipe(fromX, fromY, toX, toY, steps)
+        self._swipe(fromX, fromY, toX, toY, duration)
 
-    def _find_element_by_swipe(self, direction, using, value, element=None, steps=10, max_swipe=6):
+    def _find_element_by_swipe(self, direction, using, value, element=None, duration=1, max_swipe=6):
         times = max_swipe
 
         stability_width = 0
@@ -151,18 +153,18 @@ class BasePage(object):
                     return e
             except WebDriverException:
                 if direction == 'up':
-                    self.swipe_up(element=element, steps=steps)
+                    self.swipe_up(element=element, duration=duration)
                 elif direction == 'down':
-                    self.swipe_down(element=element, steps=steps)
+                    self.swipe_down(element=element, duration=duration)
                 elif direction == 'left':
-                    self.swipe_left(element=element, steps=steps)
+                    self.swipe_left(element=element, duration=duration)
                 elif direction == 'right':
-                    self.swipe_right(element=element, steps=steps)
+                    self.swipe_right(element=element, duration=duration)
 
                 if i == times - 1:
                     raise WebDriverException
 
-    def find_element_by_swipe_up(self, using, value, element=None, steps=10, max_swipe=6):
+    def find_element_by_swipe_up(self, using, value, element=None, duration=1, max_swipe=6):
         """
         find element by swipe up
         :param using: The element location strategy.
@@ -177,9 +179,9 @@ class BasePage(object):
             WebDriverException.
         """
         return self._find_element_by_swipe('up', using, value,
-                                           element=element, steps=steps, max_swipe=max_swipe)
+                                           element=element, duration=duration, max_swipe=max_swipe)
 
-    def find_element_by_swipe_down(self, using, value, element=None, steps=10, max_swipe=6):
+    def find_element_by_swipe_down(self, using, value, element=None, duration=1, max_swipe=6):
         """
         find element by swipe down
         :param using: The element location strategy.
@@ -194,9 +196,9 @@ class BasePage(object):
             WebDriverException.
         """
         return self._find_element_by_swipe('down', using, value,
-                                           element=element, steps=steps, max_swipe=max_swipe)
+                                           element=element, duration=duration, max_swipe=max_swipe)
 
-    def find_element_by_swipe_left(self, using, value, element=None, steps=10, max_swipe=6):
+    def find_element_by_swipe_left(self, using, value, element=None, duration=1, max_swipe=6):
         """
         find element by swipe left
         :param using: The element location strategy.
@@ -211,9 +213,9 @@ class BasePage(object):
             WebDriverException.
         """
         return self._find_element_by_swipe('left', using, value,
-                                           element=element, steps=steps, max_swipe=max_swipe)
+                                           element=element, duration=duration, max_swipe=max_swipe)
 
-    def find_element_by_swipe_right(self, using, value, element=None, steps=10, max_swipe=6):
+    def find_element_by_swipe_right(self, using, value, element=None, duration=1, max_swipe=6):
         """
         find element by swipe right
         :param using: The element location strategy.
@@ -228,9 +230,9 @@ class BasePage(object):
             WebDriverException.
         """
         return self._find_element_by_swipe('right', using, value,
-                                           element=element, steps=steps, max_swipe=max_swipe)
+                                           element=element, duration=duration, max_swipe=max_swipe)
 
-    def find_element_on_horizontal(self, using, value, element=None, steps=10, max_swipe=6):
+    def find_element_on_horizontal(self, using, value, element=None, duration=1, max_swipe=6):
         """
         find element on horizontal
         :param using: The element location strategy.
@@ -246,14 +248,14 @@ class BasePage(object):
         """
         try:
             return self.find_element_by_swipe_left(using, value,
-                                                   element=element, steps=steps, max_swipe=max_swipe)
+                                                   element=element, duration=duration, max_swipe=max_swipe)
         except WebDriverException:
             pass
 
         return self.find_element_by_swipe_right(using, value,
-                                                element=element, steps=steps, max_swipe=max_swipe)
+                                                element=element, duration=duration, max_swipe=max_swipe)
 
-    def find_element_on_vertical(self, using, value, element=None, steps=10, max_swipe=6):
+    def find_element_on_vertical(self, using, value, element=None, duration=1, max_swipe=6):
         """
         find element on vertical
         :param using: The element location strategy.
@@ -269,12 +271,12 @@ class BasePage(object):
         """
         try:
             return self.find_element_by_swipe_up(using, value,
-                                                 element=element, steps=steps, max_swipe=max_swipe)
+                                                 element=element, duration=duration, max_swipe=max_swipe)
         except WebDriverException:
             pass
 
         return self.find_element_by_swipe_down(using, value,
-                                               element=element, steps=steps, max_swipe=max_swipe)
+                                               element=element, duration=duration, max_swipe=max_swipe)
 
     def _tap(self, x, y):
         self.driver.touch('tap', {'x': x, 'y': y})

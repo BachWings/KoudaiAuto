@@ -59,5 +59,6 @@ class PWHomePage(unittest.TestCase):
         self.home_page.click_tx()
         confirm_page = WithdrawConfirmPage()
         confirm_page.withdraw()
+        time.sleep(1)
         self.assertTrue(confirm_page.is_withdraw())
 
